@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex; /* Center the navbar */
+    justify-content: center; /* Center the navbar */
+    align-items: center; /* Center the navbar vertically */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.logo {
+    text-align: center;
+}
+
+/* Hero Styles */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.hero-text {
+    text-align: left;
+    width: 50%;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+.btn1{
+  margin-bottom: 2rem;
+  background, linear-gradient(to bottom, #efd4d4, #c4f18c);
+
+}
+
+/* About Styles */
+.about {
+    display: flex;
+    justify-content: center; /* Center the about section */
+    align-items: center;
+    padding: 40px 0;
+}
+
+.about-text {
+    text-align: left;
+    width: 50%;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Menu Styles */
+.menu {
+    padding: 40px 0;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    background: linear-gradient(to bottom, #efd4d4, #c4f18c); /* Gradient background */
+}
+
+.menu-item h3 {
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/* Gallery Styles */
+.gallery {
+    padding: 40px 0;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+/* Newsletter Styles */
+.newsletter {
+    padding: 40px 0;
+    background-color: #eee;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-text, .about-image {
+        width: 100%;
+    }
+
+    .menu-item {
+        width: 45%;
+    }
+
+    .gallery-images img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-item {
+        width: 95%;
+    }
+
+    .gallery-images img {
+        width: 95%;
+    }
+
+    /* Add border to nav bar */
+    nav {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+}
